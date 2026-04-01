@@ -9,7 +9,8 @@
     Outputs:
         - Reaction forces at supports
         - Maximum and minimum shear force values
-        - Maximum and minimum bending moment values
+        - Maximum and minimum bending moment 
+        - Location of Zero Shear Force
         - SFD and BMD plots
     
     Author: Ayaan
@@ -67,6 +68,17 @@ def main():
     RL, RR = reactions(L, point_loads, udls, tdls, zdls, moments)
     x, V, M = build_arrays(L, RL, point_loads, udls, tdls, zdls, moments)
     
+    #Zero Shear Force Crossing Analysis
+    zero_crossings = []
+
+    for i in range(len(V)-1):
+        if V[i] == 0:
+            zero_crossings.append(x[i])
+        elif V[i] * V[i+1] < 0:
+        # linear interpolation for better accuracy
+            x0 = x[i] - V[i] * (x[i+1] - x[i]) / (V[i+1] - V[i])
+            zero_crossings.append(x0)
+    
     # Max / Min
     i_maxV = np.argmax(V)
     i_minV = np.argmin(V)
@@ -80,6 +92,10 @@ def main():
     print("\nShear:")
     print(f"Max = {V[i_maxV]:.2f} at x = {x[i_maxV]:.2f}")
     print(f"Min = {V[i_minV]:.2f} at x = {x[i_minV]:.2f}")
+
+    print("\nZero Shear Locations (V = 0):")
+    for z in zero_crossings:
+        print(f"x = {z:.2f} m")
 
     print("\nMoment:")
     print(f"Max = {round(M[i_maxM],1):.2f} at x = {x[i_maxM]:.2f}")
