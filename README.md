@@ -15,7 +15,7 @@ A Python-based structural analysis tool for modelling statistically determinate 
   
   **Generation of:**
     Shear Force Diagrams (SFD), 
-    Bending Moment Diagrams (BMD)
+    Bending Moment Diagrams (BMD).
   
 **Technologies Used:**
   Python, 
