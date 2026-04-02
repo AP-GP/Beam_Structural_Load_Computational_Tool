@@ -4,24 +4,24 @@ A Python-based structural analysis tool for modelling statistically determinate 
 
 **Features:**
   **Support for multiple load types:**
-      Point loads
-      Uniformly distributed loads (UDL)
+      Point loads, 
+      Uniformly distributed loads (UDL), 
       Linearly varying loads
   
   **Automatic calculation of:**
-      Support reactions
-      Shear force distribution
-      Bending moment distribution
+      Support reactions, 
+      Shear force distribution, 
+      Bending moment distribution. 
   
   **Generation of:**
-    Shear Force Diagrams (SFD)
+    Shear Force Diagrams (SFD), 
     Bending Moment Diagrams (BMD)
   
 **Technologies Used:**
-  Python
-  NumPy
-  Matplotlib
-  Dataclasses
+  Python, 
+  NumPy, 
+  Matplotlib, 
+  Dataclasses.
 
 **How It Works:**
   Download all the files and open the main logic file.
