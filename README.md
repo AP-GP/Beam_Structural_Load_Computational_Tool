@@ -25,11 +25,11 @@ A Python-based structural analysis tool for modelling statistically determinate 
 
 **How It Works:**
   Download all the files and open the main logic file.
-  Define the beam length and support conditions
+  Define the beam length and support conditions.
   Add loads (point loads, UDLs, etc.)
-  Compute reactions using static equilibrium
-  Generate shear force and bending moment distributions
-  Visualise results using plotted diagrams
+  Compute reactions using static equilibrium.
+  Generate shear force and bending moment distributions.
+  Visualise results using plotted diagrams.
 
 **Author:**
 Developed by Ayaan — a Mechanical Engineering student at UNSW with interests in structural systems, quantitative analysis, and engineering applications of Python.
