@@ -58,7 +58,7 @@ def main():
 
         elif choice == "5":
             Mval = float(input("Moment (Nm): Enter clockwise as positive" 
-                               "and anticlockwise as negative"))
+                               " and anticlockwise as negative: "))
             x = float(input("Position (m) from Left Support: "))
             moments.append(Moment(Mval, x))
 
