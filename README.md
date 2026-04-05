@@ -31,5 +31,10 @@ A Python-based structural analysis tool for modelling statistically determinate 
   Generate shear force and bending moment distributions.
   Visualise results using plotted diagrams.
 
+ **Future Additions**
+  Graphical User Interface (GUI) for the code.
+  Loads described as functions not as shapes.
+  More types of supported beams
+
 **Author:**
 Developed by Ayaan — a Mechanical Engineering student at UNSW with interests in structural systems, quantitative analysis, and engineering applications of Python.
